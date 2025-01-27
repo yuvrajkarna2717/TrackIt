@@ -1,19 +1,29 @@
 {
-  "name": "trackit",
+  "name": "trackit-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple CLI to organize and track your tasks.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "trackIt": "./bin/trackIt.js"
   },
-  "keywords": [],
+  "scripts": {
+    "start": "node bin/trackIt.js"
+  },
+  "keywords": [
+    "task-tracking",
+    "CLI",
+    "task-manager",
+    "nodejs"
+  ],
   "author": "Yuvraj Karna",
-  "license": "ISC",
+  "license": "Proprietary",
   "dependencies": {
     "chalk": "^5.4.1",
     "cli-table3": "^0.6.5",
     "dotenv": "^16.4.7",
     "fs-extra": "^11.3.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "xlsx": "^0.18.5",
     "yargs": "^17.7.2"
   }
 }
