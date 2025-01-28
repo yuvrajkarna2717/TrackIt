@@ -15,7 +15,13 @@ exports.builder = {
     default: "medium",
     describe: "Task priority (low, medium, high)",
   },
-  due: { type: "string", describe: "Due date (YYYY-MM-DD)" },
+  due: {
+    type: "string",
+    default: new Date(new Date().setDate(new Date().getDate() + 1))
+      .toISOString()
+      .split("T")[0],
+    describe: "Due date (YYYY-MM-DD)",
+  },
 };
 
 exports.handler = (argv) => {
