@@ -1,5 +1,5 @@
 {
-  "name": "trackit-cli",
+  "name": "trackit",
   "version": "1.0.0",
   "description": "A simple CLI to organize and track your tasks.",
   "main": "index.js",
