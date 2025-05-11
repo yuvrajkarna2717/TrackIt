@@ -1,4 +1,6 @@
-
+```bash
+https://www.npmjs.com/package/trackit-cli
+```
 
 
 ## License
